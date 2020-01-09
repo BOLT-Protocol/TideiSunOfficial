@@ -115,10 +115,10 @@ const handleLnChoosser = evt => {
     window.location.search = `?lang=${evt.target.dataset.ln}`;
   }
   if (window.location.href.includes(`?lang=`))
-    els.html.lang = window.location.href
-      .replace(`${window.location.origin}${window.location.pathname}?lang=`, "")
-      .replace(`${window.location.hash}`, "").replace("#","");
-   
+    els.html.lang = window.location.search.replace("?lang=","");
+    // window.location.href
+    //   .replace(`${window.location.origin}${window.location.pathname}?lang=`, "")
+    //   .replace(`${window.location.hash}`, "");
 
   let ln = els.html.lang;
   headerTextList = handelHeaderText(ln);
