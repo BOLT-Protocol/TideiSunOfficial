@@ -117,7 +117,7 @@ const handleLnChoosser = evt => {
   if (window.location.href.includes(`?lang=`))
     els.html.lang = els.html.lang = window.location.href
       .replace(`${window.location.origin}${window.location.pathname}?lang=`, "")
-      .replace(`${window.location.hash}`, "");
+      .replace(`${window.location.hash}`, "").replace("#","");
 
   let ln = els.html.lang;
   headerTextList = handelHeaderText(ln);
