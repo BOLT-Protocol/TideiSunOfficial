@@ -657,15 +657,18 @@ body {
   .footer .btn-social:not(:first-child) {
     margin-right: 1rem; }
   .footer__block {
-    height: 65vh;
+    height: 70vh;
     width: 100vw;
     z-index: -1; }
     @media only screen and (max-width: 37.5em) {
       .footer__block {
         height: 55vh; } }
+    @media only screen and (max-width: 75em) {
+      .footer__block {
+        height: 37vh; } }
     @media only screen and (max-width: 56.25em) {
       .footer__block {
-        height: 48vh; } }
+        height: 50vh; } }
 
 .grid-box--3 {
   display: grid;

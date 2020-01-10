@@ -37,10 +37,13 @@
         @include respond(phone){
             height: 55vh;
         }
-        @include respond(tab-port){
-            height: 48vh;
+        @include respond(tab-land){
+            height: 37vh;
         }
-        height: 65vh;
+        @include respond(tab-port){
+            height: 50vh;
+        }
+        height: 70vh;
         width: 100vw;
         z-index: -1;
         // pointer-events: none;
